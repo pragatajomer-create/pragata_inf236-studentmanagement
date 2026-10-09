@@ -1,6 +1,15 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const API_URL = "https://pragata-inf236-studentmanagement.vercel.app";
+
+const api = axios.create({
+  baseURL: `${API_URL}/students`,
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
 function App() {
   const [students, setStudents] = useState([]);
 
