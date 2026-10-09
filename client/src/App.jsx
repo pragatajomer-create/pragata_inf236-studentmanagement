@@ -145,7 +145,7 @@ function App() {
               onClick={() => handleEdit(student)}
               style={{ marginRight: "10px" }}
             >
-              Edit
+              Edit Student Info
             </button>
 
             <button onClick={() => handleDelete(student._id)}>Delete</button>
